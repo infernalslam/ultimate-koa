@@ -1,0 +1,22 @@
+{
+  "name": "ultimate-koa-backend",
+  "version": "1.0.0",
+  "description": "- [ ] set koa running for nodejs (node version fix: LTS) - [ ] set standard code ( use standard style ) - [ ] set axios interceptors middleware - [ ] set sequelize init migration base - [ ] set docker - [ ] set cors origin - [ ] set husky ( prevent push production ) - [ ] set unit test by ( jest )",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infernalslam/ultimate-koa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/infernalslam/ultimate-koa/issues"
+  },
+  "homepage": "https://github.com/infernalslam/ultimate-koa#readme",
+  "dependencies": {
+    "koa": "^2.5.1"
+  }
+}
