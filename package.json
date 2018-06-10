@@ -4,10 +4,12 @@
   "description": "- [ ] set koa running for nodejs (node version fix: LTS) - [ ] set standard code ( use standard style ) - [ ] set axios interceptors middleware - [ ] set sequelize init migration base - [ ] set docker - [ ] set cors origin - [ ] set husky ( prevent push production ) - [ ] set unit test by ( jest )",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "npm run watch",
     "watch": "standard --fix && nodemon ./src/server.js --watch",
-    "standard": "standard --fix"
+    "standard": "standard --fix",
+    "precommit": "npm test",
+    "prepush": "npm test"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   },
   "homepage": "https://github.com/infernalslam/ultimate-koa#readme",
   "dependencies": {
+    "jest": "^23.1.0",
     "koa": "^2.5.1",
     "koa-router": "^7.4.0"
   },
@@ -30,6 +33,7 @@
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
+    "husky": "^0.14.3",
     "standard": "^11.0.1"
   },
   "jest": {

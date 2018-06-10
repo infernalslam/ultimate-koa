@@ -7,4 +7,4 @@
 - [ ] set docker
 - [ ] set cors origin
 - [ ] set husky ( prevent push production )
-- [ ] set unit test by ( jest )
+- [x] set unit test by ( jest )
