@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm run watch",
-    "watch": "nodemon ./src/server.js --watch",
+    "watch": "standard --fix && nodemon ./src/server.js --watch",
     "standard": "standard --fix"
   },
   "repository": {
@@ -37,5 +37,12 @@
     "testMatch": [
       "**/tests/**"
     ]
+  },
+  "eslintConfig": {
+    "globals": {
+      "jest": true,
+      "test": true,
+      "expect": true
+    }
   }
 }
