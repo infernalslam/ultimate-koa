@@ -5,6 +5,6 @@
 - [ ] set axios interceptors middleware
 - [ ] set sequelize init migration base
 - [ ] set docker
-- [ ] set cors origin
+- [x] set cors origin
 - [x] set husky ( prevent push production )
 - [x] set unit test by ( jest )

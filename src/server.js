@@ -1,7 +1,10 @@
 const Koa = require('koa')
-const app = new Koa()
+const cors = require('kcors')
 const router = require('./controllers')
 
+const app = new Koa()
+
+app.use(cors())
 app.use(router.routes())
 
 const env = process.env.NODE_ENV || 'local'
