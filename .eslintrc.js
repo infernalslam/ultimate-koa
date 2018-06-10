@@ -4,6 +4,9 @@ module.exports = {
   plugins: [
     'js'
   ],
+  env: {
+    "jest": false
+  },
   rules: {
     // allow async-await
     'generator-star-spacing': 'off',
