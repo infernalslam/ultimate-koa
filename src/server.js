@@ -1,10 +1,12 @@
 const Koa = require('koa')
 const cors = require('kcors')
 const router = require('./controllers')
+const middleware = require('./middleware/response')
 
 const app = new Koa()
 
 app.use(cors())
+app.use(middleware)
 app.use(router.routes())
 
 const env = process.env.NODE_ENV || 'local'

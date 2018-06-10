@@ -2,7 +2,7 @@
 ### set up
 - [x] set koa running for nodejs (node version fix: LTS)
 - [x] set standard code ( use standard style )
-- [ ] set axios interceptors middleware
+- [x] set middleware
 - [ ] set sequelize init migration base
 - [ ] set docker
 - [x] set cors origin
