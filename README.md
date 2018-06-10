@@ -6,5 +6,5 @@
 - [ ] set sequelize init migration base
 - [ ] set docker
 - [ ] set cors origin
-- [ ] set husky ( prevent push production )
+- [x] set husky ( prevent push production )
 - [x] set unit test by ( jest )
