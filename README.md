@@ -4,7 +4,15 @@
 - [x] set standard code ( use standard style )
 - [x] set middleware
 - [ ] set sequelize init migration base
-- [ ] set docker
+- [x] set docker
 - [x] set cors origin
 - [x] set husky ( prevent push production )
 - [x] set unit test by ( jest )
+
+### How to run Docker!
+you need to know about DockerFile is customize
+
+``` 
+$ docker build -t <name-container> .
+$ docker run -p <map-port>:<map-port-server-in-container>   <name-container>
+```
