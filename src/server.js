@@ -13,7 +13,7 @@ app.use(router.routes()) // separate route
 const env = process.env.NODE_ENV || 'local'
 const port = process.env.PORT || 3000
 app.listen(port)
-console.log('Environment: ', env)
+console.log('...Environment: ', env)
 console.log('Server is listening @ port ' + port)
 
 exports.default = app
