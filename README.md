@@ -3,7 +3,7 @@
 - [x] set koa running for nodejs (node version fix: LTS)
 - [x] set standard code ( use standard style )
 - [x] set middleware
-- [ ] set sequelize init migration base
+- [ ] set sequelize init migration base (optional)
 - [x] set docker
 - [x] set cors origin
 - [x] set husky ( prevent push production )
@@ -20,7 +20,7 @@ $ docker run -p <map-port>:<map-port-server-in-container>   <name-container>
 you can change husky step test in deploy code to github/bitbucket:
 package.json
 
-```json
+```
 {
   ......,
   "scripts": {
