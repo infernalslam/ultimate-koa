@@ -5,9 +5,10 @@ const middleware = require('./middleware/response')
 
 const app = new Koa()
 
-app.use(cors())
-app.use(middleware)
-app.use(router.routes())
+app.use(cors()) // set cors
+app.use(koaBody({ formLimit: '5mb', multipart: true })) // set koa-body limit file 5mb
+app.use(middleware) //set middleware
+app.use(router.routes()) // separate route
 
 const env = process.env.NODE_ENV || 'local'
 const port = process.env.PORT || 3000

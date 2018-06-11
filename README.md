@@ -1,6 +1,7 @@
 # Ultimate Koajs backend set up project
 ### set up
 - [x] set koa running for nodejs (node version fix: LTS)
+- [x] set koa-body like body-parser
 - [x] set standard code ( use standard style )
 - [x] set middleware
 - [ ] set sequelize init migration base (optional)
@@ -13,7 +14,7 @@
 you need to know about DockerFile is customize
 ```
 $ docker build -t <name-container> .
-$ docker run -p <map-port>:<map-port-server-in-container>   <name-container>
+$ docker run -p <map-port>:<map-port-server-in-container> <name-container>
 ```
 
 ### How to set Husky
@@ -29,3 +30,24 @@ package.json
   }
 }
 ```
+
+### How to set Cors origin
+
+you can change CORS in file `server.js`
+```js
+  app.use(cors()) // change code for define CORS APIs
+  // exmaple
+  app.use(cors({
+    origin: 'domain access'
+  }))
+```
+
+### How to config koa-body
+you can change CORS in file `server.js`
+```js
+  app.use(koaBody({
+    formLimit: '5mb',
+    multipart: true
+  }))
+```
+
