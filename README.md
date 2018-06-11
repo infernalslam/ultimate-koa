@@ -11,8 +11,21 @@
 
 ### How to run Docker!
 you need to know about DockerFile is customize
-
-``` 
+```
 $ docker build -t <name-container> .
 $ docker run -p <map-port>:<map-port-server-in-container>   <name-container>
+```
+
+### How to set Husky
+you can change husky step test in deploy code to github/bitbucket:
+package.json
+
+```json
+{
+  ......,
+  "scripts": {
+    "precommit": "npm test",
+    "prepush": "npm test"
+  }
+}
 ```
