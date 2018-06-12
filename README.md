@@ -9,6 +9,7 @@
 - [x] set cors origin
 - [x] set husky ( prevent push production )
 - [x] set unit test by ( jest )
+- [ ] set migration test (supertest by koa APIs)
 
 ### How to run Docker!
 you need to know about DockerFile is customize
