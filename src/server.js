@@ -3,6 +3,7 @@ const cors = require('kcors')
 const koaBody = require('koa-body')
 const router = require('./controllers')
 const middleware = require('./middleware/response')
+const db = require('./models')
 
 const app = new Koa()
 

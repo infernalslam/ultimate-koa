@@ -9,6 +9,7 @@
 - [x] set cors origin
 - [x] set husky ( prevent push production )
 - [x] set unit test by ( jest )
+- [ ] set migration test (supertest by koa APIs)
 
 ### How to run Docker!
 you need to know about DockerFile is customize
@@ -49,5 +50,20 @@ you can change CORS in file `server.js`
     formLimit: '5mb',
     multipart: true
   }))
+```
+
+### How to set Docker
+you can fix step in build Dockerfile
+
+```
+  FROM node:8.9.1-alpine
+
+  WORKDIR work
+  COPY ./package.json /work/package.json
+  COPY ./package-lock.json /work/package-lock.json
+  RUN npm install
+  COPY . /work
+  CMD ["npm", "run", "production"]
+
 ```
 
