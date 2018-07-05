@@ -1,0 +1,20 @@
+version: '2'
+services: 
+  mysql: 
+    image: mysql:5.6.27
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/dump.sql
+  node: 
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: "sleep 100 && npm run production"
+    depends_on: 
+      - mysql
+    ports:
+      - "3000:3000"

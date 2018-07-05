@@ -5,4 +5,6 @@ COPY ./package.json /work/package.json
 COPY ./package-lock.json /work/package-lock.json
 RUN npm install
 COPY . /work
-CMD ["npm", "run", "production"]
+RUN mv /work/.env /work/.env
+
+# CMD ["npm", "run", "production"]
