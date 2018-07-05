@@ -8,7 +8,6 @@
     "dev": "npm run watch",
     "watch": "standard --fix && nodemon ./src/server.js --watch",
     "standard": "standard --fix",
-    "precommit": "npm test",
     "prepush": "npm test",
     "production": "node ./src/server.js"
   },
