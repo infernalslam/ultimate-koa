@@ -1,7 +1,8 @@
-const axios = require('axios')
+// const axios = require('../axios')
 
 class Jedi {
   constructor () {
+    // this.axios = axios
     this.axios = axios.create({
       timeout: 20000,
       headers: {

@@ -2,14 +2,14 @@ const Koa = require('koa')
 const cors = require('kcors')
 const koaBody = require('koa-body')
 const router = require('./controllers')
-const middleware = require('./middleware/response')
+const middleware = require('./middleware/response.js')
 // const db = require('./models')
 
 const app = new Koa()
 
 app.use(cors()) // set cors
 app.use(koaBody({ formLimit: '5mb', multipart: true })) // set koa-body limit file 5mb
-app.use(middleware) // set middleware
+app.use(middleware) // set middleware is not work
 app.use(router.routes()) // separate route
 
 const env = process.env.NODE_ENV || 'local'
