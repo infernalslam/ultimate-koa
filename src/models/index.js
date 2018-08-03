@@ -11,7 +11,6 @@ const config = {
 
 console.log(dbConfig[process.env.NODE_ENV])
 
-
 const sequelize = new Sequelize(dbConfig[process.env.NODE_ENV].database, dbConfig[process.env.NODE_ENV].username, dbConfig[process.env.NODE_ENV].password, config)
 let db = {}
 
