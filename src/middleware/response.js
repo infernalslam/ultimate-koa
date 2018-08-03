@@ -1,9 +1,9 @@
 const responseMiddle = async (ctx, next) => {
   try {
     await next()
-  } catch (error) {
-    ctx.status = 500
-    ctx.body = error
+  } catch (err) {
+    console.log(err)
+    ctx.throw(parseInt(err.status, 10), err.message)
   }
 }
 
