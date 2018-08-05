@@ -1,4 +1,4 @@
-// const axios = require('../axios')
+const axios = require('axios')
 
 class Jedi {
   constructor () {
@@ -15,6 +15,5 @@ class Jedi {
     return data
   }
 }
-
 
 module.exports = Jedi
